@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "Memory-Centric Clinical LLM — Capacity over TFLOPS"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - name: "Balkeum Labs"
+abstract: >-
+  A reproducible single-machine harness demonstrating that a large clinical LLM
+  (27B, INT4) can be hosted on a consumer CPU using system RAM where a mid-range
+  consumer GPU runs out of VRAM. Self-adapting across AMD/Intel hosts, it measures
+  RAM-fit vs GPU-OOM capacity, inference throughput/TTFT, energy (tokens-per-joule),
+  and federated LoRA-adapter bandwidth savings, using synthetic FHIR-shaped data and
+  open Gemma-2 stand-ins for MedGemma.
+keywords:
+  - federated-learning
+  - large-language-models
+  - edge-ai
+  - clinical-nlp
+  - quantization
+  - llama.cpp
+license: MIT
+version: "0.1.0"
+date-released: "2026-06-11"

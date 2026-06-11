@@ -1,0 +1,22 @@
+{
+  "models": {
+    "edge": {
+      "name": "gemma-2-2b-it",
+      "repo": "bartowski/gemma-2-2b-it-GGUF",
+      "filename": "gemma-2-2b-it-Q4_K_M.gguf",
+      "path": "models/gemma-2-2b-it-Q4_K_M.gguf",
+      "bytes": 1708582752,
+      "sha256": "e0aee85060f168f0f2d8473d7ea41ce2f3230c1bc1374847505ea599288a7787",
+      "note": "stand-in for MedGemma-4B (light fallback / cross-host common tier)"
+    },
+    "capacity": {
+      "name": "gemma-2-27b-it",
+      "repo": "bartowski/gemma-2-27b-it-GGUF",
+      "filename": "gemma-2-27b-it-Q4_K_M.gguf",
+      "path": "models/gemma-2-27b-it-Q4_K_M.gguf",
+      "bytes": 16645381632,
+      "sha256": "503a87ab47c9e7fb27545ec8592b4dc4493538bd47b397ceb3197e10a0370d23",
+      "note": "stand-in for MedGemma-27B (headline capacity demo)"
+    }
+  }
+}

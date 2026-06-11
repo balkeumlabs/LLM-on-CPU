@@ -1,0 +1,22 @@
+# ICCE26 capacity-demo harness — dependencies
+#
+# M1 (detection + harness) needs NONE of these: run_experiment.py works on a
+# bare Python 3.9+ stdlib. The packages below are progressive upgrades.
+
+# ---- Optional, improves detection accuracy (M1) --------------------------
+psutil>=5.9            # physical core count, cross-OS RAM
+py-cpuinfo>=9.0        # ISA flags (VNNI/AMX) on Windows/macOS
+
+# ---- Inference engine: generic path (M3/M4), all x86 + NVIDIA ------------
+# Install the wheel matching the host. CPU-only example:
+#   pip install llama-cpp-python
+# CUDA build (GTX 1060, Pascal) — see README; uses prebuilt CUDA wheels.
+# llama-cpp-python>=0.2.90
+
+# ---- Plotting for figures (M3+) ------------------------------------------
+# matplotlib>=3.7
+
+# ---- Intel-accelerated path (Target B only; NEVER required) --------------
+# Installed only on the Intel laptop to exercise DL Boost / AMX / OpenVINO:
+#   pip install ipex-llm[cpp]        # Intel LLM acceleration
+#   pip install openvino             # Intel inference / NPU

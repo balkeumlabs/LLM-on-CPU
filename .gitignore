@@ -1,0 +1,54 @@
+# ───────────────────────── Python ─────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ──────────────────── Large / regenerable ─────────────────
+# Model weights (downloaded via src/fetch_models.py; 2-17 GB each)
+models/
+*.gguf
+*.bin
+*.safetensors
+
+# Synthetic data (regenerate: python src/gen_synthetic_fhir.py)
+data/
+
+# Live experiment outputs (scratch; curated showcase lives in docs/)
+results/
+
+# ──────────────── Private working materials ───────────────
+# Original proposal, templates, exports — kept OUT of the public repo
+outline/
+template/
+exports/
+
+# Local Claude Code / agent harness config
+.claude/
+
+# Internal work packages / planning docs (not for public repo)
+WP*.md
+
+# ─────────────────────── OS / editor ──────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# ───────────────────────── Logs ───────────────────────────
+*.log
